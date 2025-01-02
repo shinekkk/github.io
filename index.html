@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>数据展示</title>
+    <!-- 引入DataTables的CSS和JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#dataTable').DataTable();
+        } );
+    </script>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>列1</th>
+                <th>列2</th>
+                <th>列3</th>
+                <th>列4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>数据1</td>
+                <td>数据2</td>
+                <td>数据3</td>
+                <td>数据4</td>
+            </tr>
+            <tr>
+                <td>数据5</td>
+                <td>数据6</td>
+                <td>数据7</td>
+                <td>数据8</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
